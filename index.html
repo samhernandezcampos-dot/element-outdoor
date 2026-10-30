@@ -60,6 +60,54 @@ button{cursor:pointer}button:active{transform:scale(.97)}
 .bottomgrid{gap:5px}
 
 }
+  /* AJUSTE CUBOT - HORIZONTAL */
+@media (orientation:landscape) and (max-height:700px){
+  html,body{
+    height:100%;
+    overflow:hidden;
+  }
+  .app{
+    height:100dvh;
+    min-height:0;
+    padding:5px;
+    gap:5px;
+    overflow:hidden;
+  }
+  header{
+    flex:0 0 auto;
+  }
+  .main{
+    flex:1;
+    min-height:0;
+    grid-template-columns:48px minmax(0,1.5fr) minmax(210px,.85fr);
+    gap:5px;
+    overflow:hidden;
+  }
+  nav,.center,.side{
+    min-height:0;
+  }
+  .center{
+    gap:5px;
+    overflow:hidden;
+  }
+  .hero{
+    min-height:0;
+    flex:1;
+  }
+  .side{
+    overflow-y:auto;
+    gap:5px;
+  }
+  .panel{
+    padding:6px;
+  }
+  .bottomgrid{
+    gap:5px;
+  }
+  .tools button{
+    min-height:32px;
+  }
+}
 </style>
 </head>
 <body><div class="app">
