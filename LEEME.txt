@@ -1,0 +1,14 @@
+ELEMENT OUTDOOR — paquete PWA
+
+Este paquete prepara el prototipo para instalarse como aplicación web (sin barra del navegador).
+No se instala directamente desde el archivo local: debe publicarse primero en un alojamiento HTTPS.
+
+Contenido:
+- index.html: interfaz ELEMENT OUTDOOR original.
+- manifest.webmanifest: nombre, iconos, orientación horizontal y modo standalone.
+- sw.js: caché básica para abrir la interfaz incluso sin conexión después de la primera visita.
+- icons/: iconos de instalación.
+
+Siguiente paso: publicar estos archivos en GitHub Pages (gratuito) y abrir la dirección HTTPS en Chrome Android. Después: menú ⋮ > Instalar aplicación / Añadir a pantalla de inicio.
+
+Nota: algunas funciones que dependen de GPS, clima, mapas o enlaces externos necesitan conexión y permisos. La PWA no convierte automáticamente las funciones de muestra en servicios nativos del vehículo.
